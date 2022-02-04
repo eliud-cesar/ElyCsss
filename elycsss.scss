@@ -1,0 +1,640 @@
+// -------------- Fountain --------------
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://necolas.github.io/normalize.css/latest/normalize.css');
+
+
+// -------------- COLOR VARIABLES --------------
+$colors: (
+  red-lighteen: hsl(0, 100, 74), 
+  red-light: hsl(0, 100, 63),
+  red-normal: hsl(0, 100, 58),
+  red-dark: hsl(0, 100, 44),
+  red-darkeen: hsl(0, 100, 29),
+  
+  green-lighteen: hsl(120, 50 , 65),
+  green-light: hsl(120, 50 , 52),
+  green-normal: hsl(120, 50 , 45),
+  green-dark: hsl(120, 50 , 34),
+  green-darkeen: hsl(120, 50 , 22),
+  
+  blue-lighteen: hsl(240, 94, 74),
+  blue-light: hsl(240, 95, 63),
+  blue-normal: hsl(240, 94, 58),
+  blue-dark: hsl(240, 95, 36),
+  blue-darkeen: hsl(240, 95, 22),
+  
+  yellow-lighteen: hsl(60, 85, 74),
+  yellow-light: hsl(60, 85, 69),
+  yellow-normal: hsl(60, 85, 59),
+  yellow-dark: hsl(60, 85, 44),
+  yellow-darkeen: hsl(60, 84, 29),
+  
+  gray-dark: hsl(0, 0, 40),
+  gray-light: hsl(0, 0, 60),
+  
+  black-dark: hsl(0, 0, 10),
+  black-light: hsl(0, 0, 20),
+  
+  white-dark: hsl(0, 0, 100),
+  white-light: hsl(0, 0, 94)
+);
+
+
+// -------------- GENERAL --------------
+* {
+  color: map-get($colors, black-dark);
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+}
+body {
+  background: map-get($colors, white-dark);
+}
+img {
+	width: 100%;
+}
+.wrapped {
+	min-width: 350px;
+  max-width: 1200px;
+  width: 90%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.separator {
+  width: 100%;
+  margin: 1.2rem 0;
+	height: 1px;
+	background: lighten(map-get($colors, gray-light), 24);
+}
+
+
+// -------------- SECTION COLORS --------------
+.colors {
+  display: flex;
+  gap: .5rem;
+}
+.cuadro {
+  width: 50px;
+  height: 50px;
+  border: 3px solid pink;
+  margin-bottom: 0.5rem;
+}
+// BG YELLOW
+.bg-yellow-lighteen {
+  background: map-get($colors, yellow-lighteen);
+}
+.bg-yellow-light {
+  background: map-get($colors, yellow-light);
+}
+.bg-yellow-normal {
+  background: map-get($colors, yellow-normal);
+}
+.bg-yellow-dark {
+  background: map-get($colors, yellow-dark);
+}
+.bg-yellow-darkeen {
+  background: map-get($colors, yellow-darkeen);
+}
+// BG GREEN
+.bg-green-lighteen {
+  background: map-get($colors, green-lighteen);
+}
+.bg-green-light {
+  background: map-get($colors, green-light);
+}
+.bg-green-normal {
+  background: map-get($colors, green-normal);
+}
+.bg-green-dark {
+  background: map-get($colors, green-dark);
+}
+.bg-green-darkeen {
+  background: map-get($colors, green-darkeen);
+}
+// BG RED
+.bg-red-lighteen {
+  background: map-get($colors, red-lighteen);
+}
+.bg-red-light {
+  background: map-get($colors, red-light);
+}
+.bg-red-normal {
+  background: map-get($colors, red-normal);
+}
+.bg-red-dark {
+  background: map-get($colors, red-dark);
+}
+.bg-red-darkeen {
+  background: map-get($colors, red-darkeen);
+}
+// BG BLUE
+.bg-blue-lighteen {
+  background: map-get($colors, blue-lighteen);
+}
+.bg-blue-light {
+  background: map-get($colors, blue-light);
+}
+.bg-blue-normal {
+  background: map-get($colors, blue-normal);
+}
+.bg-blue-dark {
+  background: map-get($colors, blue-dark);
+}
+.bg-blue-darkeen {
+  background: map-get($colors, blue-darkeen);
+}
+// BG GRAY
+.bg-gray-light {
+  background: map-get($colors, gray-light);
+}
+.bg-gray-dark {
+  background: map-get($colors, gray-dark);
+}
+// BG BLACK
+.bg-black-light {
+  background: map-get($colors, black-light);
+}
+.bg-black-dark {
+  background: map-get($colors, black-dark);
+}
+// BG WHITE
+.bg-white-light {
+  background: map-get($colors, white-light);
+}
+.bg-white-dark {
+  background: map-get($colors, white-dark);
+}
+
+
+// -------------- COLORS --------------
+// COLOR YELLOW
+.color-green-lighteen {
+  color: map-get($colors, yellow-lighteen);
+}
+.color-green-light {
+  color: map-get($colors, yellow-light);
+}
+.color-green-normal {
+  color: map-get($colors, yellow-normal);
+}
+.color-green-dark {
+  color: map-get($colors, yellow-dark);
+}
+.color-green-darkeen {
+  color: map-get($colors, yellow-darkeen);
+}
+// COLOR GREEN
+.color-green-lighteen {
+  color: map-get($colors, green-lighteen);
+}
+.color-green-light {
+  color: map-get($colors, green-light);
+}
+.color-green-normal {
+  color: map-get($colors, green-normal);
+}
+.color-green-dark {
+  color: map-get($colors, green-dark);
+}
+.color-green-darkeen {
+  color: map-get($colors, green-darkeen);
+}
+// COLOR RED
+.color-red-lighteen {
+  color: map-get($colors, red-lighteen);
+}
+.color-red-light {
+  color: map-get($colors, red-light);
+}
+.color-red-normal {
+  color: map-get($colors, red-normal);
+}
+.color-red-dark {
+  color: map-get($colors, red-dark);
+}
+.color-red-darkeen {
+  color: map-get($colors, red-darkeen);
+}
+// COLOR BLUE
+.color--bluelighteen {
+  color: map-get($colors, blue-lighteen);
+}
+.color-blue-light {
+  color: map-get($colors, blue-light);
+}
+.color-blue-normal {
+  color: map-get($colors, blue-normal);
+}
+.color-blue-dark {
+  color: map-get($colors, blue-dark);
+}
+.color-blue-darkeen {
+  color: map-get($colors, blue-darkeen);
+}
+// COLOR GRAY
+.color-gray-light {
+  color: map-get($colors, gray-light);
+}
+.color-gray-dark {
+  color: map-get($colors, gray-dark);
+}
+// COLOR BLACK
+.color-black-light {
+  color: map-get($colors, black-light);
+}
+.color-black-dark {
+  color: map-get($colors, black-dark);
+}
+// COLOR WHITE
+.color-white-light {
+  color: map-get($colors, white-light);
+}
+.color-white-dark {
+  color: map-get($colors, white-dark);
+}
+
+
+// -------------- TYPOGRAPHY --------------
+h1, .title-1 {
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+}
+h2, .title-2 {
+  font-size: 2rem;
+  margin: 1.3rem 0;
+}
+h3, .title-3 {
+  font-size: 1.5rem;
+  margin: 1.2rem 0;
+}
+h4, .title-4 {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+p, .regular {
+  font-size: 1rem;
+}
+.small {
+  font-size: .9rem;
+}
+.very-small {
+  font-size: .75rem;
+}
+
+
+// -------------- CODE --------------
+.block-code {
+  color: map-get($colors, red-lighteen);
+  background: map-get($colors, black-light);
+  padding: 1rem;
+  border-radius: .25rem;
+}
+code {
+  background: map-get($colors, red-lighteen);
+}
+
+
+// -------------- LIST -------------- 
+ul {
+  li {
+    margin-bottom: 0.5rem;
+    
+    &::marker {
+      content: '\1F4A2   ';
+    }
+  }
+}
+
+
+// -------------- PRE --------------
+pre {
+  margin: 1.5rem 0;
+}
+pre.pre {
+  padding: 4px;
+  box-shadow: 2px 2px 4px 1px lighten(map-get($colors, black-light), 50);
+}
+
+
+// -------------- TABLE --------------
+table {
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  
+  // var color table
+  --color: #FF7979;
+  
+  &.green {
+    --color: #7BD37B;
+  }
+  
+  &.blue {
+    --color: #7C7CFB;
+  }
+  
+  &.yellow {
+    --color: #CFCF11;
+  }
+  
+  &.black {
+    --color: #333333;
+  }
+  
+  caption {
+    margin-bottom: .25rem;
+  }
+  
+  // HEAD
+  thead {
+    background: var(--color);
+    
+    td {
+      border-left: 1px solid var(--color); 
+      border-right: 1px solid var(--color);
+      color: white;
+      font-weight: bold;
+    }
+  }
+  
+  // BODY
+  tbody {
+    background: map-get($colors, white-dark);
+    
+    td {
+      border-left: 1px solid var(--color);
+      border-right: 1px solid var(--color);
+    }
+  }
+  
+  // FOOTER
+  tfoot {
+    background: map-get($colors, white-light);
+    
+    td {
+      border-left: 1px solid var(--color);
+      border-right: 1px solid var(--color);
+      border-bottom: 1px solid var(--color);
+    }
+  }
+  
+  // FIELD
+  td {
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  // FULL
+  &.full {
+    width: 100%;
+  }
+}
+
+// -------------- CITE --------------
+blockquote {
+  margin: 1.2rem 0;
+  padding: .5rem 0 .5rem 1rem;
+  border-left: 5px solid map-get($colors, red-lighteen);
+  
+  p {
+    margin: 0;
+  }
+}
+
+
+// -------------- LINK'S --------------
+
+a {
+  color: map-get($colors, red-normal);
+  
+  &:hover {
+    color: map-get($colors, red-darkeen);
+  }
+  
+  &:active {
+    color: map-get($colors, red-lighteen);
+  }
+}
+
+// -------------- BUTTONS --------------
+.btn {
+  font-family: 'Ubuntu', sans-serif;
+  background: none;
+  border: none;
+  border-radius: .25rem;
+  color: map-get($colors, white-dark);
+  padding: 0.5rem;
+  cursor: pointer;
+  margin: .25rem 0;
+}
+
+.btn.red {
+  background: map-get($colors, red-normal);
+  border: 1px solid map-get($colors, red-dark);
+
+  &:active {
+    background: map-get($colors, red-darkeen);
+  }
+  
+  &.ghost {
+    background: none;
+    border: 1px solid map-get($colors, red-normal);
+    color: map-get($colors, red-normal);
+    
+    &:active {
+      background: map-get($colors, red-normal);
+      border: 1px solid map-get($colors, red-dark);
+      color: map-get($colors, white-dark);
+    }
+  }
+}
+
+.btn.blue {
+  background: map-get($colors, blue-normal);
+  border: 1px solid map-get($colors, blue-dark);
+
+  &:active {
+    background: map-get($colors, blue-darkeen);
+  }
+  
+  &.ghost {
+    background: none;
+    border: 1px solid map-get($colors, blue-normal);
+    color: map-get($colors, blue-normal); 
+    
+    &:active {
+      background: map-get($colors, blue-normal);
+      border: 1px solid map-get($colors, blue-dark);
+      color: map-get($colors, white-dark);
+    }
+  }
+}
+
+.btn.green {
+  background: map-get($colors, green-normal);
+  border: 1px solid map-get($colors, green-dark);
+
+  &:active {
+    background: map-get($colors, green-darkeen);
+  }
+  
+  &.ghost {
+    background: none;
+    border: 1px solid map-get($colors, green-normal);
+    color: map-get($colors, green-normal);
+    
+    &:active {
+      background: map-get($colors, green-normal);
+      border: 1px solid map-get($colors, green-dark);
+      color: map-get($colors, white-dark);
+    }
+  }
+}
+
+.btn.yellow {
+  background: map-get($colors, yellow-dark);
+  border: 1px solid map-get($colors, yellow-normal);
+
+  &:active {
+    background: map-get($colors, yellow-darkeen);
+  }
+  
+  &.ghost {
+    background: none;
+    border: 1px solid map-get($colors, yellow-normal);
+    color: map-get($colors, yellow-normal);
+    
+    &:active {
+      background: map-get($colors, yellow-dark);
+      border: 1px solid map-get($colors, yellow-normal);
+      color: map-get($colors, white-dark);
+    }
+  }
+}
+
+.btn.white {
+  background: map-get($colors, white-dark);
+  color: map-get($colors, black-dark);
+  border: 1px solid map-get($colors, white-light);
+    
+  &:active {
+    background: map-get($colors, white-light);
+  }
+  
+  &.ghost {
+    background: none;
+    border: 1px solid map-get($colors, white-dark);
+    color: map-get($colors, white-dark);
+    
+    &:active {
+      background: map-get($colors, white-dark);
+      color: map-get($colors, black-dark);
+      border: 1px solid map-get($colors, white-light);
+    }
+  }
+}
+
+.btn.dark {
+  background: map-get($colors, black-dark);
+  border: 1px solid map-get($colors, black-light);
+
+  &:active {
+    background: map-get($colors, black-light);
+  }
+  
+  &.ghost {
+    background: none;
+    border: 1px solid map-get($colors, black-dark);
+    color: map-get($colors, black-dark);
+    
+    &:active {
+      color: map-get($colors, white-dark);
+      background: map-get($colors, black-dark);
+      border: 1px solid map-get($colors, black-light);
+    }
+  }
+}
+
+.btn.desactive {
+  background: map-get($colors, gray-light);
+  color: map-get($colors, gray-dark);
+  cursor: default;
+  
+  &.ghost {
+    background: none;
+    border: 1px solid map-get($colors, gray-light);
+    color: map-get($colors, gray-light);
+    
+    &:hover {
+      background: map-get($colors, gray-light);
+      color: map-get($colors, gray-dark);
+    }
+  }
+}
+
+// -------------- ALINGMENT --------------
+
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.left-block {
+  display: block;
+  margin-right: auto;
+}
+.right-block {
+  display: block;
+  margin-left: auto;
+}
+
+
+// -------------- SUMMARY --------------
+summary {
+  cursor: pointer;
+}
+
+// -------------- DIALOG --------------
+.modal.open {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  dialog {
+    background: map-get($colors, white-dark);
+    font-family: 'Ubuntu', sans-serif;
+    color: map-get($colors, white-dark);
+    border: none;
+    border-radius: .25rem;
+    max-width: 80%;
+  }
+}
+
+
+// -------------- SCROLL --------------
+::-webkit-scrollbar {
+  background: lighten(map-get($colors, gray-light), 25);
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: map-get($colors, gray-light);
+}

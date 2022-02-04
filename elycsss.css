@@ -1,0 +1,583 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+@import url("https://necolas.github.io/normalize.css/latest/normalize.css");
+* {
+  color: #1a1a1a;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background: white;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapped {
+  min-width: 350px;
+  max-width: 1200px;
+  width: 90%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.separator {
+  width: 100%;
+  margin: 1.2rem 0;
+  height: 1px;
+  background: #d6d6d6;
+}
+
+.colors {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.cuadro {
+  width: 50px;
+  height: 50px;
+  border: 3px solid pink;
+  margin-bottom: 0.5rem;
+}
+
+.bg-yellow-lighteen {
+  background: #f5f584;
+}
+
+.bg-yellow-light {
+  background: #f3f36d;
+}
+
+.bg-yellow-normal {
+  background: #efef3e;
+}
+
+.bg-yellow-dark {
+  background: #d0d011;
+}
+
+.bg-yellow-darkeen {
+  background: #88880c;
+}
+
+.bg-green-lighteen {
+  background: #79d279;
+}
+
+.bg-green-light {
+  background: #47c247;
+}
+
+.bg-green-normal {
+  background: #39ac39;
+}
+
+.bg-green-dark {
+  background: #2b822b;
+}
+
+.bg-green-darkeen {
+  background: #1c541c;
+}
+
+.bg-red-lighteen {
+  background: #ff7a7a;
+}
+
+.bg-red-light {
+  background: #ff4242;
+}
+
+.bg-red-normal {
+  background: #ff2929;
+}
+
+.bg-red-dark {
+  background: #e00000;
+}
+
+.bg-red-darkeen {
+  background: #940000;
+}
+
+.bg-blue-lighteen {
+  background: #7e7efb;
+}
+
+.bg-blue-light {
+  background: #4747fa;
+}
+
+.bg-blue-normal {
+  background: #2f2ff9;
+}
+
+.bg-blue-dark {
+  background: #0505b3;
+}
+
+.bg-blue-darkeen {
+  background: #03036d;
+}
+
+.bg-gray-light {
+  background: #999999;
+}
+
+.bg-gray-dark {
+  background: #666666;
+}
+
+.bg-black-light {
+  background: #333333;
+}
+
+.bg-black-dark {
+  background: #1a1a1a;
+}
+
+.bg-white-light {
+  background: #f0f0f0;
+}
+
+.bg-white-dark {
+  background: white;
+}
+
+.color-green-lighteen {
+  color: #f5f584;
+}
+
+.color-green-light {
+  color: #f3f36d;
+}
+
+.color-green-normal {
+  color: #efef3e;
+}
+
+.color-green-dark {
+  color: #d0d011;
+}
+
+.color-green-darkeen {
+  color: #88880c;
+}
+
+.color-green-lighteen {
+  color: #79d279;
+}
+
+.color-green-light {
+  color: #47c247;
+}
+
+.color-green-normal {
+  color: #39ac39;
+}
+
+.color-green-dark {
+  color: #2b822b;
+}
+
+.color-green-darkeen {
+  color: #1c541c;
+}
+
+.color-red-lighteen {
+  color: #ff7a7a;
+}
+
+.color-red-light {
+  color: #ff4242;
+}
+
+.color-red-normal {
+  color: #ff2929;
+}
+
+.color-red-dark {
+  color: #e00000;
+}
+
+.color-red-darkeen {
+  color: #940000;
+}
+
+.color--bluelighteen {
+  color: #7e7efb;
+}
+
+.color-blue-light {
+  color: #4747fa;
+}
+
+.color-blue-normal {
+  color: #2f2ff9;
+}
+
+.color-blue-dark {
+  color: #0505b3;
+}
+
+.color-blue-darkeen {
+  color: #03036d;
+}
+
+.color-gray-light {
+  color: #999999;
+}
+
+.color-gray-dark {
+  color: #666666;
+}
+
+.color-black-light {
+  color: #333333;
+}
+
+.color-black-dark {
+  color: #1a1a1a;
+}
+
+.color-white-light {
+  color: #f0f0f0;
+}
+
+.color-white-dark {
+  color: white;
+}
+
+h1, .title-1 {
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+}
+
+h2, .title-2 {
+  font-size: 2rem;
+  margin: 1.3rem 0;
+}
+
+h3, .title-3 {
+  font-size: 1.5rem;
+  margin: 1.2rem 0;
+}
+
+h4, .title-4 {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+p, .regular {
+  font-size: 1rem;
+}
+
+.small {
+  font-size: 0.9rem;
+}
+
+.very-small {
+  font-size: 0.75rem;
+}
+
+.block-code {
+  color: #ff7a7a;
+  background: #333333;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+code {
+  background: #ff7a7a;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+ul li::marker {
+  content: "💢  ";
+}
+
+pre {
+  margin: 1.5rem 0;
+}
+
+pre.pre {
+  padding: 4px;
+  box-shadow: 2px 2px 4px 1px #b3b3b3;
+}
+
+table {
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  --color: #FF7979;
+}
+table.green {
+  --color: #7BD37B;
+}
+table.blue {
+  --color: #7C7CFB;
+}
+table.yellow {
+  --color: #CFCF11;
+}
+table.black {
+  --color: #333333;
+}
+table caption {
+  margin-bottom: 0.25rem;
+}
+table thead {
+  background: var(--color);
+}
+table thead td {
+  border-left: 1px solid var(--color);
+  border-right: 1px solid var(--color);
+  color: white;
+  font-weight: bold;
+}
+table tbody {
+  background: white;
+}
+table tbody td {
+  border-left: 1px solid var(--color);
+  border-right: 1px solid var(--color);
+}
+table tfoot {
+  background: #f0f0f0;
+}
+table tfoot td {
+  border-left: 1px solid var(--color);
+  border-right: 1px solid var(--color);
+  border-bottom: 1px solid var(--color);
+}
+table td {
+  text-align: center;
+  padding: 0.5rem;
+}
+table.full {
+  width: 100%;
+}
+
+blockquote {
+  margin: 1.2rem 0;
+  padding: 0.5rem 0 0.5rem 1rem;
+  border-left: 5px solid #ff7a7a;
+}
+blockquote p {
+  margin: 0;
+}
+
+a {
+  color: #ff2929;
+}
+a:hover {
+  color: #940000;
+}
+a:active {
+  color: #ff7a7a;
+}
+
+.btn {
+  font-family: "Ubuntu", sans-serif;
+  background: none;
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin: 0.25rem 0;
+}
+
+.btn.red {
+  background: #ff2929;
+  border: 1px solid #e00000;
+}
+.btn.red:active {
+  background: #940000;
+}
+.btn.red.ghost {
+  background: none;
+  border: 1px solid #ff2929;
+  color: #ff2929;
+}
+.btn.red.ghost:active {
+  background: #ff2929;
+  border: 1px solid #e00000;
+  color: white;
+}
+
+.btn.blue {
+  background: #2f2ff9;
+  border: 1px solid #0505b3;
+}
+.btn.blue:active {
+  background: #03036d;
+}
+.btn.blue.ghost {
+  background: none;
+  border: 1px solid #2f2ff9;
+  color: #2f2ff9;
+}
+.btn.blue.ghost:active {
+  background: #2f2ff9;
+  border: 1px solid #0505b3;
+  color: white;
+}
+
+.btn.green {
+  background: #39ac39;
+  border: 1px solid #2b822b;
+}
+.btn.green:active {
+  background: #1c541c;
+}
+.btn.green.ghost {
+  background: none;
+  border: 1px solid #39ac39;
+  color: #39ac39;
+}
+.btn.green.ghost:active {
+  background: #39ac39;
+  border: 1px solid #2b822b;
+  color: white;
+}
+
+.btn.yellow {
+  background: #d0d011;
+  border: 1px solid #efef3e;
+}
+.btn.yellow:active {
+  background: #88880c;
+}
+.btn.yellow.ghost {
+  background: none;
+  border: 1px solid #efef3e;
+  color: #efef3e;
+}
+.btn.yellow.ghost:active {
+  background: #d0d011;
+  border: 1px solid #efef3e;
+  color: white;
+}
+
+.btn.white {
+  background: white;
+  color: #1a1a1a;
+  border: 1px solid #f0f0f0;
+}
+.btn.white:active {
+  background: #f0f0f0;
+}
+.btn.white.ghost {
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+.btn.white.ghost:active {
+  background: white;
+  color: #1a1a1a;
+  border: 1px solid #f0f0f0;
+}
+
+.btn.dark {
+  background: #1a1a1a;
+  border: 1px solid #333333;
+}
+.btn.dark:active {
+  background: #333333;
+}
+.btn.dark.ghost {
+  background: none;
+  border: 1px solid #1a1a1a;
+  color: #1a1a1a;
+}
+.btn.dark.ghost:active {
+  color: white;
+  background: #1a1a1a;
+  border: 1px solid #333333;
+}
+
+.btn.desactive {
+  background: #999999;
+  color: #666666;
+  cursor: default;
+}
+.btn.desactive.ghost {
+  background: none;
+  border: 1px solid #999999;
+  color: #999999;
+}
+.btn.desactive.ghost:hover {
+  background: #999999;
+  color: #666666;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.left-block {
+  display: block;
+  margin-right: auto;
+}
+
+.right-block {
+  display: block;
+  margin-left: auto;
+}
+
+summary {
+  cursor: pointer;
+}
+
+.modal.open {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal.open dialog {
+  background: white;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  max-width: 80%;
+}
+
+::-webkit-scrollbar {
+  background: #d9d9d9;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #999999;
+}
